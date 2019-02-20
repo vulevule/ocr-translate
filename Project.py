@@ -510,7 +510,7 @@ def do_training(scope):
         print("\nTrain for", file_name)
         ann = train_ann(ann, inputs, outputs, 2000)
         
-        return ann
+    return ann
     
 
 
@@ -572,7 +572,6 @@ ann = do_training(6) # parametar metode je koliko trening fajlova da se pokrije
 file_name = "test/test1.jpg"
 text = do_magic(ann, file_name)
 print(text)
-
 
 # ##### 3. Translate
 print(translate(text))
